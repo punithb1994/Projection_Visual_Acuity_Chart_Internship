@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="445dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_vision_test" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:text="This test is designed to monitor acuteness and clearness of your eyesight. Visual acuity problems aften comes with birth, but also can be acquired during time. One of the common reasons is the reading on too short distances or working too long at the computer."
+        android:textAlignment="center"
+        android:textSize="20sp" />
+</LinearLayout>

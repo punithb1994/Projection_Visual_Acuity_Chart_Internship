@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="10dp">
+
+                <!-- Patient ID -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingPatientID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:ems="10"
+                        android:hint="@string/patient_id"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- FirstName -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingPatientFirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:ems="10"
+                        android:hint="@string/first_name"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- LastName -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingPatientLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:ems="10"
+                        android:hint="@string/last_name"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Gender -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/gentextlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/Viewinggender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:ems="10"
+                        android:hint="@string/gender"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--  Radio Button -->
+                <LinearLayout
+                    android:id="@+id/genderlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/male" />
+
+                    <RadioButton
+                        android:id="@+id/rdbmale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.41"
+                        android:checked="false"
+                        android:text="Male"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/female" />
+
+                    <RadioButton
+                        android:id="@+id/rdbfem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Female"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- DOB -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.60"
+                        android:ems="10"
+                        android:hint="@string/dob"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Address -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/address"
+                        android:inputType="textCapWords"
+                        android:maxLength="100"
+                        android:maxLines="3"
+                        android:windowSoftInputMode="adjustResize" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Mobile Number -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:hint="@string/mobilenumber"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:windowSoftInputMode="adjustResize" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Consultant -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/ViewingConsultant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ."
+                        android:ems="10"
+                        android:hint="@string/consultant"
+                        android:inputType="textCapWords"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Edit Button -->
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/EditButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/RoyalBlue"
+                    android:padding="12dp"
+                    android:paddingBottom="70dp"
+                    android:text="Edit"
+                    android:textColor="@color/white" />
+                <!-- Update Button -->
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/UpdateButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/RoyalBlue"
+                    android:padding="12dp"
+                    android:paddingBottom="70dp"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

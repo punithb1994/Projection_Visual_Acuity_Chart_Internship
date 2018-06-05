@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="0.2"
+        android:id="@+id/lnn"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent,UselessLeaf,DisableBaselineAlignment"
+       >
+
+        <SearchView
+            android:id="@+id/searchpatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:queryHint="Search Patients"
+            android:background="@color/white"
+            tools:ignore="NewApi,ObsoleteLayoutParam,NestedWeights"
+            >        </SearchView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnn"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/listpatients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="NestedScrolling,NewApi">
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

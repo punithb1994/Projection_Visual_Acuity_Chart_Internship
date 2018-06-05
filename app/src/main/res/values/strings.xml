@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">PAC</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="patient_id">Patient ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">DOB</string>
+    <string name="address">Address</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="consultant">Consultant</string>
+    <string name="btn_save">Save</string>
+
+    <string name="nav_1">Home</string>
+    <string name="nav_2">Report Bugs</string>
+    <string name="nav_3">About</string>
+    <string name="nav_4">Exit</string>
+
+    <string name="btn_send_bug_report">Send</string>
+    <string name="enter_bug_report">Describe the bug you found</string>
+
+    <string name="db_import">Import</string>
+    <string name="db_export">Export</string>
+    <string name="db_delete">Delete</string>
+
+    <string-array name="Acuity">
+        <item>LogMar</item>
+        <item>EDTRS Letters</item>
+    </string-array>
+
+    <string-array name="Snellan_Format">
+        <item>Decimal Snellen</item>
+        <item>UK Snellen</item>
+        <item>US Snellen</item>
+    </string-array>
+
+    <string-array name="Letter_Set">
+        <item>Sloan</item>
+        <item>European</item>
+        <item>Landolt C</item>
+        <item>Tumbling E</item>
+    </string-array>
+
+    <string-array name="Letters_per_line">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="Number_of_Lines">
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="Chart_Line_Sep">
+        <item>10.00</item>
+        <item>9.75</item>
+        <item>9.50</item>
+        <item>9.25</item>
+        <item>9.00</item>
+        <item>8.75</item>
+        <item>8.50</item>
+        <item>8.25</item>
+        <item>8.00</item>
+        <item>7.75</item>
+        <item>7.50</item>
+        <item>7.25</item>
+        <item>7.00</item>
+        <item>6.75</item>
+        <item>6.50</item>
+        <item>6.25</item>
+        <item>6.00</item>
+        <item>5.75</item>
+        <item>5.50</item>
+        <item>5.25</item>
+        <item>5.00</item>
+        <item>4.75</item>
+        <item>4.50</item>
+        <item>4.25</item>
+        <item>4.00</item>
+        <item>3.75</item>
+        <item>3.50</item>
+        <item>3.25</item>
+        <item>3.00</item>
+        <item>2.75</item>
+        <item>2.50</item>
+        <item>2.25</item>
+        <item>2.00</item>
+        <item>1.75</item>
+        <item>1.50</item>
+        <item>1.25</item>
+        <item>1.00</item>
+        <item>0.75</item>
+        <item>0.50</item>
+        <item>0.25</item>
+        <item>0.00</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Pinhole</item>
+        <item>Binocular</item>
+        <item>Aided</item>
+        <item>Unaided</item>
+    </string-array>
+
+    <string-array name="Distance_in_feet">
+        <item>4</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="action_search">Search</string>
+    <string name="gender">Gender</string>
+    <string name="width">Width</string>
+    <string name="monitor">Screen Size</string>
+    <string name="height">Height</string>
+</resources>

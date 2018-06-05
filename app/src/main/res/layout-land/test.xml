@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/lightgrey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/Lnlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <!-- Patient ID -->
+                <TextView
+                    android:id="@+id/pidlabel"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="170dp"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:text="Patient ID:"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/TextviewPatientid"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnchoosepatient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/RoyalBlue"
+                    android:padding="12dp"
+                    android:text="Choose Patient"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lnlay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lnlay1"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginStart="110dp"
+                    android:paddingEnd="22dp"
+                    android:paddingRight="22dp"
+                    android:paddingTop="10dp"
+                    android:text="Glasses Type:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/type"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Lnlay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lnlay2"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <!--  Radio Button -->
+                <LinearLayout
+                    android:id="@+id/genderlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/rdbrighteye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="210dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:text="Right Eye"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rdblefteye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Left Eye"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Save Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnsave"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lnlay3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/RoyalBlue"
+                android:padding="12dp"
+                android:text="Save"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/sbline"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/sbchar"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="false"
+            android:max="7"
+            android:rotation="270"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/sbchar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="false"
+            android:max="5"
+            android:rotation="270"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvcharacter"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/sbchar"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/sbchar"
+            android:layout_marginLeft="-200dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvletter"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/sbline"
+            android:layout_alignLeft="@+id/sbline"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/sbline"
+            android:layout_marginLeft="-550dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="430dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="430dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.05"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.95"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/v7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:includeFontPadding="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="New Text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

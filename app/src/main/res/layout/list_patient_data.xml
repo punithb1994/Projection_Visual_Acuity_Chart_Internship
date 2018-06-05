@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/list_patient_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:focusableInTouchMode="true"
+    android:theme="@android:style/Theme.WithActionBar"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/activity_vertical_margin"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/usersList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar"
+    >
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/framelayoutbluring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="false"
+        android:elevation="2dp"
+        android:focusable="false"
+        android:visibility="invisible">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignEnd="@+id/fab"
+        android:layout_alignRight="@+id/fab"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/textViewfab1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:text="Add Patient"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab2"
+            android:layout_alignLeft="@+id/fab2"
+            android:layout_alignStart="@+id/fab2"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_add_p"
+            android:visibility="invisible"
+            app:backgroundTint="@color/RoyalBlue"
+            app:borderWidth="0dp"
+            app:elevation="5dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_alignEnd="@+id/fab"
+        android:layout_alignRight="@+id/fab"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/textViewfab2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:text="Backup Data"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_export"
+            android:visibility="invisible"
+            app:backgroundTint="@color/RoyalBlue"
+            app:borderWidth="0dp"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_alignEnd="@+id/fab"
+        android:layout_alignRight="@+id/fab"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/textViewfab3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="5dp"
+            android:paddingTop="10dp"
+            android:text="Restore Data"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_import"
+            android:visibility="invisible"
+            app:backgroundTint="@color/RoyalBlue"
+            app:borderWidth="0dp"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp" />
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/RoyalBlue"
+        app:borderWidth="0dp"
+        app:elevation="5dp" />
+</RelativeLayout>
