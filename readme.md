@@ -7,7 +7,7 @@ different character sizes, different number of characters per line and number of
 
 
 
-Developed in a group of 3 members
+Developed by 3 members
 
 Punith - https://www.facebook.com/punithb1994
 
