@@ -1,4 +1,4 @@
-# Projection Visal Acuity Chart or PAC
+# Projection Visual Acuity Chart or PAC
 
 The Projection Visual Acuity Chart project is a new, self-contained product intended for use on the Android platform. The Project Projection Visual Acuity Chart-Calibration is an Android application developed on the basis of the drawbacks
 observed in the existing standalone system in windows. The existing system is an application through which doctors examine the patients vision. The drawback is that the existing system is not portable easily. The Android application developed
